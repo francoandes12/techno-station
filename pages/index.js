@@ -1,8 +1,10 @@
 import Head from 'next/head'
 import Image from 'next/image'
-import VideoWrapper from './../components/VideoWrapper'
-
+import dynamic from 'next/dynamic'
 export default function Home() {
+  const VideoWrapper = dynamic(() => import('../components/VideoWrapper'), {
+    loading: () => <p>cargando..</p>,
+  })
   const mes = {
     trackDelMes: {
       title: 'Tripppin (Maksim Dark Remix)',
@@ -50,19 +52,19 @@ export default function Home() {
               <ul className='list-group list-group-flush'>
                 <li className='list-group-item'>Pais: {dj.pais}</li>
                 <li className='list-group-item'>
-                  <i className='fas fa-headphones'></i>
                   Genero: {dj.genero}
+                  <i className='fas fa-headphones ms-1'></i>
                 </li>
                 <li className='list-group-item'>{dj.info}</li>
                 <li className='list-group-item'>
                   <div className='d-flex'>
                     <p>Top Track:{dj.track}</p>
                     <p>
-                      .You can listen it,
+                      .Listen it,
                       <a
                         href='https://www.youtube.com/watch?v=gCXfjw0JgT0&ab_channel=EskimoRecordings'
                         target='_blank'
-                        className='text-info'
+                        className='text-info ms-1'
                       >
                         here
                       </a>
@@ -87,23 +89,25 @@ export default function Home() {
                   Facebook
                 </a>
               </div>
-              <h1 className='text-dark text-center'>Set recomendado!</h1>
-              <VideoWrapper url={dj.set} />
-            </div>
-            <div className='bg-white'>
-              <h2 className='text-center text-secondary'>Set del mes!</h2>
-              <VideoWrapper
-                url={mes.setDelMes.url}
-                title={mes.setDelMes.title}
-              />
-              <h2 className='text-center text-secondary'>Track del mes!</h2>
-              <VideoWrapper
-                url={mes.trackDelMes.url}
-                title={mes.trackDelMes.title}
-              />
+              <div className='bg-dark'>
+                <h1 className='text-center mb-2 border-bottom border-light'>
+                  Set recomendado!
+                </h1>
+                <VideoWrapper url={dj.set} />
+              </div>
             </div>
           </div>
         </div>
+        <div className='bg-secondary col-12'>
+          <div className='bg-dark p-1'>
+            <h2 className='text-center'>Set del mes!</h2>
+          </div>
+          <VideoWrapper url={mes.setDelMes.url} title={mes.setDelMes.title} />
+        </div>
+        <div className='bg-dark p-1'>
+          <h2 className='text-center'>Track del mes!</h2>
+        </div>
+        <VideoWrapper url={mes.trackDelMes.url} title={mes.trackDelMes.title} />
       </div>
     </>
   )

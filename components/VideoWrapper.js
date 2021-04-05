@@ -1,9 +1,13 @@
 import React from 'react'
 
-const VideoWrapper = ({ title, url }) => {
+const VideoWrapper = ({ title, url, color }) => {
   return (
     <>
-      {title && <h3 className='text-dark text-center'>{title}</h3>}
+      {title && (
+        <h3 className={`text-center ${color ? color : 'text-light'}`}>
+          {title}
+        </h3>
+      )}
       <iframe
         width='100%'
         height='450'
