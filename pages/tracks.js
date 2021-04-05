@@ -1,10 +1,9 @@
 import React from 'react'
-import Navbar from '../components/Navbar'
 
 const tracks = () => {
   return (
     <div>
-      <h2>Tracks</h2>
+      <h2>Tracks Cooming soon!</h2>
     </div>
   )
 }
