@@ -33,7 +33,7 @@ export default function Home() {
       <h1 className='text-center mt-3 mb-4'>Bienvenidos a Techno Station</h1>
       <div className='row gx-0'>
         <div className='d-flex justify-content-center'>
-          <div className='col-6'>
+          <div className='col-12 col-md-6'>
             <div className='card mb-5'>
               <Image
                 className='rounded-circle mt-1'

@@ -16,16 +16,16 @@ const sets = () => {
       </Head>
       <h2 className='text-center'>Los mejores sets</h2>
       <div className='row bg-secondary d-flex gx-0 justify-content-around'>
-        <div className='col-5'>
+        <div className='col-12 col-md-5'>
           <VideoWrapper url={sets.set1} />
         </div>
-        <div className='col-5'>
+        <div className='col-12 col-md-5'>
           <VideoWrapper url={sets.set2} />
         </div>
-        <div className='col-5'>
+        <div className='col-12 col-md-5'>
           <VideoWrapper url={sets.set3} />
         </div>
-        <div className='col-5'>
+        <div className='col-12 col-md-5'>
           <VideoWrapper url={sets.set4} />
         </div>
       </div>
