@@ -32,7 +32,9 @@ export default function Home() {
         <title>Techno Station</title>
         <link rel='icon' href='/favicon.ico' />
       </Head>
-      <h1 className='text-center mt-3 mb-4'>Bienvenidos a Techno Station</h1>
+      <h1 className='text-center mt-3 mb-4'>
+        Bienvenidos a Techno Station Cba
+      </h1>
       <div className='row gx-0'>
         <div className='d-flex justify-content-center'>
           <div className='col-12 col-md-6'>
@@ -98,16 +100,26 @@ export default function Home() {
             </div>
           </div>
         </div>
-        <div className='bg-secondary col-12'>
-          <div className='bg-dark p-1'>
-            <h2 className='text-center'>Set del mes!</h2>
+        <div className='row gx-0'>
+          <div className='d-flex justify-content-center'>
+            <div className='col-12 col-md-6'>
+              <div className='bg-dark p-1'>
+                <h2 className='text-center'>Set del mes!</h2>
+              </div>
+              <VideoWrapper
+                url={mes.setDelMes.url}
+                title={mes.setDelMes.title}
+              />
+              <div className='bg-dark p-1'>
+                <h2 className='text-center'>Track del mes!</h2>
+              </div>
+              <VideoWrapper
+                url={mes.trackDelMes.url}
+                title={mes.trackDelMes.title}
+              />
+            </div>
           </div>
-          <VideoWrapper url={mes.setDelMes.url} title={mes.setDelMes.title} />
         </div>
-        <div className='bg-dark p-1'>
-          <h2 className='text-center'>Track del mes!</h2>
-        </div>
-        <VideoWrapper url={mes.trackDelMes.url} title={mes.trackDelMes.title} />
       </div>
     </>
   )

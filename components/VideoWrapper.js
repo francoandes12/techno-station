@@ -1,6 +1,6 @@
 import React from 'react'
 
-const VideoWrapper = ({ title, url, color }) => {
+const VideoWrapper = ({ title, url, color, height }) => {
   return (
     <>
       {title && (
@@ -10,7 +10,7 @@ const VideoWrapper = ({ title, url, color }) => {
       )}
       <iframe
         width='100%'
-        height='450'
+        height={height ? height : '450'}
         src={url}
         title='YouTube video player'
         frameBorder='0'
