@@ -6,6 +6,10 @@ const tracks = () => {
     <>
       <Head>
         <title>Tracks</title>
+        <meta
+          name='description'
+          content='all electronic fresh and old tracks are here!'
+        />
       </Head>
       <h2 className='text-center mt-2'>Top fresh tracks, encontralos aca</h2>
       <div className='row bg-secondary d-flex gx-0 justify-content-around'>

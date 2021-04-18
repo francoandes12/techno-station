@@ -3,7 +3,11 @@ import Image from 'next/image'
 import dynamic from 'next/dynamic'
 export default function Home() {
   const VideoWrapper = dynamic(() => import('../components/VideoWrapper'), {
-    loading: () => <p>cargando..</p>,
+    loading: () => (
+      <div className='spinner-border' role='status'>
+        <span className='visually-hidden'>Loading...</span>
+      </div>
+    ),
   })
   const mes = {
     trackDelMes: {
@@ -29,7 +33,11 @@ export default function Home() {
   return (
     <>
       <Head>
-        <title>Techno Station</title>
+        <title>Techno Station Cba</title>
+        <meta
+          name='description'
+          content='the best techno music in the web, is here'
+        />
         <link rel='icon' href='/favicon.ico' />
       </Head>
       <h1 className='text-center mt-3 mb-4'>
@@ -62,34 +70,46 @@ export default function Home() {
                   <div className='d-flex'>
                     <p>Top Track:{dj.track}</p>
                     <p>
-                      .Listen it,
+                      .You can Listen,
                       <a
+                        des
+                        rel='noopener'
                         href='https://www.youtube.com/watch?v=gCXfjw0JgT0&ab_channel=EskimoRecordings'
                         target='_blank'
                         className='text-info ms-1'
                       >
-                        here
+                        Lovely Sweet Divine here.
                       </a>
                     </p>
                   </div>
                 </li>
               </ul>
               <div className='card-body d-flex justify-content-between'>
-                <a
-                  target='_blank'
-                  href='https://soundcloud.com/eelke-kleijn'
-                  className='card-link'
-                  style={{ color: 'orange' }}
+                <button
+                  type='button'
+                  className='btn'
+                  style={{ backgroundColor: 'orange' }}
                 >
-                  Soundcloud
-                </a>
-                <a
-                  target='_blank'
-                  href='https://www.facebook.com/eelkekleijn/'
-                  className='card-link text-primary'
-                >
-                  Facebook
-                </a>
+                  <a
+                    id='sound'
+                    rel='noopener'
+                    target='_blank'
+                    href='https://soundcloud.com/eelke-kleijn'
+                    className='card-link'
+                  >
+                    Soundcloud
+                  </a>
+                </button>
+                <button type='button' className='btn btn-primary'>
+                  <a
+                    rel='noopener'
+                    target='_blank'
+                    href='https://www.facebook.com/eelkekleijn/'
+                    className='card-link'
+                  >
+                    Facebook
+                  </a>
+                </button>
               </div>
               <div className='bg-dark'>
                 <h1 className='text-center mb-2 border-bottom border-light'>

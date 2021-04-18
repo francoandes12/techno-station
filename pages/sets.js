@@ -18,6 +18,7 @@ const sets = () => {
     <>
       <Head>
         <title>Sets</title>
+        <meta name='description' content='the best electronic sets are here!' />
       </Head>
       <h2 className='text-center mt-2'>Los mejores sets de la web</h2>
       <div className='row bg-secondary d-flex gx-0 justify-content-around'>

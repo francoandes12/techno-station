@@ -1,13 +1,15 @@
 import React, { useState } from 'react'
 import Link from 'next/link'
-const Navbar = () => {
+const Navbar = ({ upRef }) => {
   const [isNavCollapsed, setIsNavCollapsed] = useState(true)
   const handleNavCollapse = () => setIsNavCollapsed(!isNavCollapsed)
   return (
     <nav className='navbar navbar-expand-lg navbar-light bg-light'>
       <div className='container-fluid'>
         <Link href='/'>
-          <a className='navbar-brand'>Techno Station Cba</a>
+          <a className='navbar-brand' ref={upRef}>
+            Techno Station Cba
+          </a>
         </Link>
         <button
           className='navbar-toggler'

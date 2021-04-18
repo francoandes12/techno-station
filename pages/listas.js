@@ -36,6 +36,7 @@ const listas = () => {
     <>
       <Head>
         <title>Listas</title>
+        <meta name='description' content='the best playlist, are here' />
       </Head>
       <h2 className='text-center mt-2'>Las mejores listas</h2>
       <h3 className='text-center'>con tracks finamente seleccionados.</h3>
