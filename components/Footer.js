@@ -5,7 +5,7 @@ const Footer = ({ upRef }) => {
     upRef.current.scrollIntoView({ behavior: 'smooth' })
   }
   return (
-    <div className='bg-white text-dark mt-2 p-3 fixed-bottom'>
+    <div className='bg-white text-dark mt-2 p-3'>
       <div className='row text-center'>
         <div className='col-12 col-md-3'>
           <p>Creado por Franco Ibarra y Facundo Petri.</p>
