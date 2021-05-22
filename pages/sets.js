@@ -6,13 +6,13 @@ const sets = () => {
     loading: () => <p>cargando..</p>,
   })
   const sets = {
-    set1: 'https://www.youtube.com/embed/2pnDnxL237c',
-    set2: 'https://www.youtube.com/embed/soBP7fEKA3o',
-    set3: 'https://www.youtube.com/embed/OyDg-VeCz6I',
-    set4: 'https://www.youtube.com/embed/8gu52jo3qyY',
-    set5: 'https://www.youtube.com/embed/Dtpserl8CzU',
-    set6: 'https://www.youtube.com/embed/erW4UP_cpnU',
-    set7: 'https://www.youtube.com/embed/uQKbxwpeRl0',
+    set1: 'https://www.youtube.com/embed/w2EKkovBGgM',
+    set2: 'https://www.youtube.com/embed/JFy-0F2UCD0',
+    set3: 'https://www.youtube.com/embed/WYgdfXFV1mM',
+    set4: 'https://www.youtube.com/embed/LIZ18Wlrmp8',
+    set5: 'https://www.youtube.com/embed/1_iJx_01_UQ',
+    set6: 'https://www.youtube.com/embed/kFFS3KxPeHc',
+    set7: 'https://www.youtube.com/embed/t3DEVR1XvVE',
   }
   return (
     <>

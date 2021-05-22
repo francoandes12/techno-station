@@ -1,26 +1,26 @@
 export const tracks = [
   {
-    name: 'Reset Robot - Fluid [Truesoul]',
-    url: 'https://www.youtube.com/embed/aMQiIZbdIkQ',
+    name: 'Marco Faraone - Our Freedom -- Drumcode -- DC242',
+    url: 'https://www.youtube.com/embed/videoseries?list=PLhkZrfli9PCod2y1RSUz-KHjvNRIXyzKT&ab_channel=drumcodeofficial',
   },
   {
-    name: 'Luttrell - Snoop Dawk',
-    url: 'https://www.youtube.com/embed/PUhQdn_-ng4',
+    name: 'AL050 - Recondite - Bird EP',
+    url: 'https://www.youtube.com/embed/videoseries?list=PLvmn9Ssy7H3zvtK_DKnGiLtZ5Vv7sm394&ab_channel=Afterlife',
   },
   {
-    name: 'Eli Brown - Morning Light',
-    url: 'https://www.youtube.com/embed/8orLH_7wpCE',
+    name: 'Yotto & Stephan Jolk - New Era',
+    url: 'https://www.youtube.com/embed/hLc49xxSaeE',
   },
   {
-    name: 'Kevin Di Serna - Hyperblue',
-    url: 'https://www.youtube.com/embed/UHs2rlta0Gs',
+    name: 'AIROD & Amelie Lens - Space Program',
+    url: 'https://www.youtube.com/embed/x5JJLLc_n2g',
   },
   {
-    name: ' Matador - Eightball [RUKUS]',
-    url: 'https://www.youtube.com/embed/GgPqesE0nd8',
+    name: 'Alan Fitzpatrick & Joel Mull feat Frangie - We Dont Know Anything Yet',
+    url: 'https://www.youtube.com/embed/RR67_RlQNNk',
   },
   {
-    name: 'Solomun - The Center Will Not Hold',
-    url: 'https://www.youtube.com/embed/qk6QvwvwgNk',
+    name: 'Moonwalk - Rapture (Extended Mix)',
+    url: 'https://www.youtube.com/embed/RyDzLuQN_7c',
   },
 ]

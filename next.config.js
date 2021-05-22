@@ -8,7 +8,7 @@ module.exports = withPWA({
     webpack5: true,
   },
   images: {
-    domains: ['ege.electronicgroove.com'],
+    domains: ['www.clubbingspain.com'],
   },
   webpack(config) {
     config.module.rules.push({

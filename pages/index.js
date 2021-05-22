@@ -11,24 +11,22 @@ export default function Home() {
   })
   const mes = {
     trackDelMes: {
-      title: 'Tripppin (Maksim Dark Remix)',
-      url: 'https://www.youtube.com/embed/C_PZHK_Hz9k',
+      title: 'Guy Mantzur - My Wild Flower',
+      url: 'https://www.youtube.com/embed/8fRzicVlsq0',
     },
     setDelMes: {
-      title: 'Guy J - Echos (Live) LF044',
-      url: 'https://www.youtube.com/embed/dAVCAya_t1U',
+      title: 'In the MOOD - Episode 361',
+      url: 'https://www.youtube.com/embed/7TKGaz4_ELk',
     },
   }
   const dj = {
-    nombre: 'Eelke Kleijn',
-    pais: 'Holanda',
-    genero: 'Melodico/Progress',
-    track: 'Lovely Sweet Divine',
-    set: 'https://www.youtube.com/embed/isWT118zd4g',
-    info:
-      'Eelke Kleijn is a rare talent. With work stretching across movie trailer scores, deep live shows and incredibly well formed production, he crosses a boundary from electronic producer and in to a true modern day composer.-Fuente: Resident Advisor',
-    foto:
-      'https://ege.electronicgroove.com/wp-content/uploads/2020/06/Eelke-Kleijn-I.jpg',
+    nombre: 'Marc Romboy',
+    pais: 'Alemania',
+    genero: 'Techno',
+    track: 'Phobos w/ Stephan Bodzin',
+    set: 'https://www.youtube.com/embed/E_kl9_rAMtI',
+    info: 'Marc Romboy has been in the music biz for over a decade working behind the scenes on dance music labels such as Alphabet City, Terminal M or PSI-49-Net. His latest project is Systematic Recordings which he set up in 2004 and has quickly become one of the top electrohouse imprints.Fuente: Resident Advisor',
+    foto: 'https://www.clubbingspain.com/imagenes/Marc-Romboy-2019.jpg',
   }
   return (
     <>
@@ -72,13 +70,12 @@ export default function Home() {
                     <p>
                       .You can Listen,
                       <a
-                        des
                         rel='noopener'
-                        href='https://www.youtube.com/watch?v=gCXfjw0JgT0&ab_channel=EskimoRecordings'
+                        href='https://www.youtube.com/watch?v=quY5Vky6vZI'
                         target='_blank'
                         className='text-info ms-1'
                       >
-                        Lovely Sweet Divine here.
+                        here
                       </a>
                     </p>
                   </div>
@@ -94,7 +91,7 @@ export default function Home() {
                     id='sound'
                     rel='noopener'
                     target='_blank'
-                    href='https://soundcloud.com/eelke-kleijn'
+                    href='https://soundcloud.com/MARCROMBOY'
                     className='card-link'
                   >
                     Soundcloud
@@ -104,7 +101,7 @@ export default function Home() {
                   <a
                     rel='noopener'
                     target='_blank'
-                    href='https://www.facebook.com/eelkekleijn/'
+                    href='https://es-la.facebook.com/marcromboyfanpage'
                     className='card-link'
                   >
                     Facebook
