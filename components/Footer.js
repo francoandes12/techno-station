@@ -8,7 +8,7 @@ const Footer = ({ upRef }) => {
     <div className='bg-white text-dark mt-2 p-3'>
       <div className='row text-center'>
         <div className='col-12 col-md-3'>
-          <p>Creado por Franco Ibarra y Facundo Petri.</p>
+          <p>Creado por Franco Ibarra. Team Andes</p>
         </div>
         <div className='col-12 col-md-3'>
           <p>Córdoba,Argentina.2021</p>

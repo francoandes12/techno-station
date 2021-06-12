@@ -18,7 +18,7 @@ const contacto = () => {
               <p className='card-text text-dark'>
                 O tambien podes comunicarte via redes sociales
               </p>
-              <div className='d-flex justify-content-between'>
+              <div className='d-flex justify-content-center'>
                 <button type='button' className='btn btn-primary'>
                   <a
                     rel='noopener'
@@ -27,16 +27,6 @@ const contacto = () => {
                     className='card-link'
                   >
                     Facebook
-                  </a>
-                </button>
-                <button type='button' className='btn btn-primary'>
-                  <a
-                    rel='noopener'
-                    target='_blank'
-                    href='https://www.linkedin.com/in/franco-ibarra/'
-                    className='card-link'
-                  >
-                    LinkedIn
                   </a>
                 </button>
               </div>
