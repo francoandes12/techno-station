@@ -8,7 +8,7 @@ module.exports = withPWA({
     webpack5: true,
   },
   images: {
-    domains: ['www.clubbingspain.com'],
+    domains: ['www.clubbingspain.com', 'i1.sndcdn.com'],
   },
   webpack(config) {
     config.module.rules.push({

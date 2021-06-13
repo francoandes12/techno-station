@@ -1,5 +1,6 @@
 import Head from 'next/head'
 import dynamic from 'next/dynamic'
+
 export default function Home() {
   const VideoWrapper = dynamic(() => import('../components/VideoWrapper'), {
     loading: () => (
@@ -28,7 +29,7 @@ export default function Home() {
     info: 'Sebastien Leger es de esos productores que mamaron mucho french filter house y que ahora quieren rememorar ese sonido sin necesidad de recurrir a los mismos clichés que sus maestros. Precursores como Ian Pooley, Daft Punk o Dj Sneak que le hicieron bailar y soñar de bien joven y que con el paso del tiempk le han empujado a dedicarse a la música house que tanto le apasiona. Su estilo bascula siempre entre la pasión del house y la presencia descarada del electro-clash más desvergonzado y hedonista. También ha trabajado para sellos de techno y house como Defected, Ovum o Intec. Junto a su compañero Jimmy Van del Velde lleva por delante los sellos Cyclik, Subkroniq y el más reciente BITS..Fuente: Clubbing Spain',
     foto: 'https://i1.sndcdn.com/avatars-ySgaNsEi8bjLhtEE-6Sqk3Q-t500x500.jpg',
     facebook: 'https://es-la.facebook.com/sebastienleger',
-    soundcloud: 'https://soundcloud.com/sebastienleger'
+    soundcloud: 'https://soundcloud.com/sebastienleger',
   }
   return (
     <>
@@ -46,14 +47,21 @@ export default function Home() {
       <div className='row gx-0'>
         <div className='d-flex justify-content-center'>
           <div className='col-12 col-md-6'>
-            <div className='card mb-5 d-flex justify-content-center'>
-              <img
-                className='rounded-circle mt-1'
-                src={dj.foto}
-                alt={dj.nombre}
-                width={500}
-                height={300}
-              />
+            <div className='card mb-5'>
+              <div
+                style={{
+                  height: '400px',
+                  display: 'flex',
+                  justifyContent: 'center',
+                }}
+              >
+                <img
+                  className='rounded-circle mt-1'
+                  src={dj.foto}
+                  alt={dj.nombre}
+                  style={{ width: '80%' }}
+                />
+              </div>
               <div className='card-body text-center'>
                 <h5 className='card-title text-dark'>{dj.nombre}</h5>
                 <p className='card-text text-dark'>DJ del mes</p>
