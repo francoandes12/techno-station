@@ -7,30 +7,26 @@ const listas = () => {
   })
   const listas = {
     house: {
-      url:
-        'https://www.youtube.com/embed/videoseries?list=PL6K4IVRzmkaBbgscpf2EGrSDPqBzfB2g8',
+      url: 'https://www.youtube.com/embed/videoseries?list=PL6K4IVRzmkaBbgscpf2EGrSDPqBzfB2g8',
       title: 'House playlist, powered by Gaston Theiler.',
     },
     techno: {
-      url:
-        'https://www.youtube.com/embed/videoseries?list=PL6K4IVRzmkaBi_DxdBGiXiEaTLVJpRqVZ',
+      url: 'https://www.youtube.com/embed/videoseries?list=PL6K4IVRzmkaBi_DxdBGiXiEaTLVJpRqVZ',
       title: 'Techno playlist, powered by Andes',
     },
     progress: {
-      url:
-        'https://www.youtube.com/embed/videoseries?list=PL6K4IVRzmkaAAR0MqSl_nZNyFgJMMYq3U',
+      url: 'https://www.youtube.com/embed/videoseries?list=PL6K4IVRzmkaAAR0MqSl_nZNyFgJMMYq3U',
       title: 'Progress playlist, powered by Andes',
     },
     clasicos: {
-      url:
-        'https://www.youtube.com/embed/videoseries?list=PL6K4IVRzmkaBjxF4API18YrjdnRf2Rmxt',
+      url: 'https://www.youtube.com/embed/videoseries?list=PL6K4IVRzmkaBjxF4API18YrjdnRf2Rmxt',
       title: 'Tracks Clasicos by Andes.',
     },
-    selection: {
-      url:
-        'https://www.youtube.com/embed/videoseries?list=PL6K4IVRzmkaBXXIo99-Mwy7p6CocCZL5g',
-      title: 'Selections by Andes',
-    },
+    // selection: {
+    //   url:
+    //     'https://www.youtube.com/embed/videoseries?list=PL6K4IVRzmkaBXXIo99-Mwy7p6CocCZL5g',
+    //   title: 'Selections by Andes',
+    // },
   }
   return (
     <>
@@ -58,12 +54,6 @@ const listas = () => {
           <VideoWrapper
             url={listas.progress.url}
             title={listas.progress.title}
-          />
-        </div>
-        <div className='col-11 col-md-5'>
-          <VideoWrapper
-            url={listas.selection.url}
-            title={listas.selection.title}
           />
         </div>
       </div>

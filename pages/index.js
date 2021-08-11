@@ -11,25 +11,26 @@ export default function Home() {
   })
   const mes = {
     trackDelMes: {
-      title: 'Maceo Plex Vs Faithless - Insomnia 2021 (Epic Mix)',
-      url: 'https://www.youtube.com/embed/vhg2JH1DVBU',
+      title: 'Mr Diamond - Dance With Me',
+      url: 'https://www.youtube.com/embed/zwhmBmMi-sw',
     },
     setDelMes: {
-      title: 'Josh Butler Live Sunrise DJ Set From Arataki, New Zealand',
-      url: 'https://www.youtube.com/embed/3sxBEDlk4iQ',
+      title: 'Victor Ruiz (Brasil) @ Drumcode Radio 569 25.06.2021"',
+      url: 'https://www.youtube.com/embed/R7KcoHS6TF4',
     },
   }
   const dj = {
-    nombre: 'Sébastien Léger',
-    pais: 'Francia',
-    genero: 'Progress',
-    track: 'Sebastien Leger - Lanarka',
-    trackLink: 'https://www.youtube.com/watch?v=-2qWVnT5Jok',
-    set: 'https://www.youtube.com/embed/jfRYBufKFJA',
-    info: 'Sebastien Leger es de esos productores que mamaron mucho french filter house y que ahora quieren rememorar ese sonido sin necesidad de recurrir a los mismos clichés que sus maestros. Precursores como Ian Pooley, Daft Punk o Dj Sneak que le hicieron bailar y soñar de bien joven y que con el paso del tiempk le han empujado a dedicarse a la música house que tanto le apasiona. Su estilo bascula siempre entre la pasión del house y la presencia descarada del electro-clash más desvergonzado y hedonista. También ha trabajado para sellos de techno y house como Defected, Ovum o Intec. Junto a su compañero Jimmy Van del Velde lleva por delante los sellos Cyclik, Subkroniq y el más reciente BITS..Fuente: Clubbing Spain',
-    foto: 'https://i1.sndcdn.com/avatars-ySgaNsEi8bjLhtEE-6Sqk3Q-t500x500.jpg',
-    facebook: 'https://es-la.facebook.com/sebastienleger',
-    soundcloud: 'https://soundcloud.com/sebastienleger',
+    nombre: 'Bart Skils',
+    pais: 'Paises Bajos',
+    genero: 'Techno',
+    track: 'Moby - Go (Bart Skils Remix)',
+    trackLink:
+      'https://www.youtube.com/watch?v=SAV1OmMKt98&ab_channel=drumcodeofficial',
+    set: 'https://www.youtube.com/embed/avs7kmerglc',
+    info: 'La carrera de Bart Skils comenzó en 1995 cuando se muda a Amsterdam y comienza a trabajar para Outland Records. Tras pinchar en el Mazzo por primera vez se convierte en residente con sus fiestas semanales llamadas VOLTT. A partir de ahí se empezó a crear un nombre en la escena de la "Venecia del norte" gracias a sus suaves mezclas y sus sets dinámicos que varían desde el techno más rítmico al minimal más deep, siempre con la pista de baile como meta. En la actualidad Bart Skils es residente y promotor de varias fiestas que se desarrollan mensualmente en diferentes clubs de la ciudad holandesa. Por un lado está Traffic en el Melkweg (Amsterdam) con el que se centra en el techno más clásico mientras que le dal al mínimal-techno con VOLTT en el Paradiso y Static en el Club 11.Como productor Bart Skils ha publicado en Pure Plastic (el sello de Mark Broom) y en 100% Pure (Amsterdam). Su deep techno ha sido charteado por djs de la talla de Guido Schneider, Luciano, Adam Beyer, Deep Dish, Villalobos, Loco Dice, Sven Vath, Mathew Dear, Richie Hawtin o Dominik Eulberg. Además de sus residencias mensuales, es un habitual de los mejores festivales de la zona como Awakenings, Lowlands, Innercity, Pinkpop, Dance Valley, Extrema o 10 Days Off.Fuente: Clubbing Spain',
+    foto: 'https://www.edmtunes.com/wp-content/uploads/2021/07/wasted-heroes-bart-skils-techno_900x.jpeg',
+    facebook: 'https://www.facebook.com/djbartskils',
+    soundcloud: 'https://soundcloud.com/bart-skils',
   }
   return (
     <>
@@ -80,7 +81,7 @@ export default function Home() {
                       .You can Listen,
                       <a
                         rel='noopener'
-                        href='https://www.youtube.com/watch?v=quY5Vky6vZI'
+                        href={dj.trackLink}
                         target='_blank'
                         className='text-info ms-1'
                       >

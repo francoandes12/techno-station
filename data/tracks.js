@@ -1,26 +1,34 @@
 export const tracks = [
   {
-    name: 'Marco Faraone - Our Freedom -- Drumcode -- DC242',
-    url: 'https://www.youtube.com/embed/videoseries?list=PLhkZrfli9PCod2y1RSUz-KHjvNRIXyzKT&ab_channel=drumcodeofficial',
+    name: 'Afterlife Realm Of Consciousness Pt.V',
+    url: 'https://www.youtube.com/embed/videoseries?list=PLvmn9Ssy7H3wVTXxVPrFohHtxl5sNDglf&ab_channel=Afterlife',
   },
   {
-    name: 'AL050 - Recondite - Bird EP',
-    url: 'https://www.youtube.com/embed/videoseries?list=PLvmn9Ssy7H3zvtK_DKnGiLtZ5Vv7sm394&ab_channel=Afterlife',
+    name: 'Pig&Dan, Gregor Tresher - Soulcatcher',
+    url: 'https://www.youtube.com/embed/videoseries?list=PLhkZrfli9PCq7C12MgY8qWHkLNxHiVoZO&ab_channel=drumcodeofficial',
   },
   {
-    name: 'Yotto & Stephan Jolk - New Era',
-    url: 'https://www.youtube.com/embed/hLc49xxSaeE',
+    name: 'Nina Kraviz - Skyscrapers',
+    url: 'https://www.youtube.com/embed/b9YO0KBAtO8',
   },
   {
-    name: 'AIROD & Amelie Lens - Space Program',
-    url: 'https://www.youtube.com/embed/x5JJLLc_n2g',
+    name: 'CHROMATICS "SHADOW (MACEO PLEX REMIX)',
+    url: 'https://www.youtube.com/embed/pbyIzhfWgeg',
   },
   {
-    name: 'Alan Fitzpatrick & Joel Mull feat Frangie - We Dont Know Anything Yet',
-    url: 'https://www.youtube.com/embed/RR67_RlQNNk',
+    name: 'Nahue Sintes, Fourni - U Don"t Know (Alex O"Rion Deep Dub Mix)',
+    url: 'https://www.youtube.com/embed/LKdResibO3c',
   },
   {
-    name: 'Moonwalk - Rapture (Extended Mix)',
-    url: 'https://www.youtube.com/embed/RyDzLuQN_7c',
+    name: 'Reboot - Ass Up (Hector Couto Remix)',
+    url: 'https://www.youtube.com/embed/Zytv8ZGBXTQ',
+  },
+  {
+    name: 'Rafael Cerato & Antony Toga-Freedom',
+    url: 'https://www.youtube.com/embed/bqVGP_itmbY',
+  },
+  {
+    name: 'Di Chiara Brothers - Love is Real',
+    url: 'https://www.youtube.com/embed/lPYCzh3fq_Y',
   },
 ]

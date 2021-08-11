@@ -5,15 +5,40 @@ const sets = () => {
   const VideoWrapper = dynamic(() => import('../components/VideoWrapper'), {
     loading: () => <p>cargando..</p>,
   })
-  const sets = {
-    set1: 'https://www.youtube.com/embed/w2EKkovBGgM',
-    set2: 'https://www.youtube.com/embed/JFy-0F2UCD0',
-    set3: 'https://www.youtube.com/embed/WYgdfXFV1mM',
-    set4: 'https://www.youtube.com/embed/LIZ18Wlrmp8',
-    set5: 'https://www.youtube.com/embed/1_iJx_01_UQ',
-    set6: 'https://www.youtube.com/embed/kFFS3KxPeHc',
-    set7: 'https://www.youtube.com/embed/t3DEVR1XvVE',
-  }
+  const sets = [
+    {
+      id: 1,
+      link: 'https://www.youtube.com/embed/pYA5m779WYc',
+    },
+    {
+      id: 2,
+      link: 'https://www.youtube.com/embed/GqJEupIlMps',
+    },
+    {
+      id: 3,
+      link: 'https://www.youtube.com/embed/_jrwLhQtbHQ',
+    },
+    {
+      id: 4,
+      link: 'https:/www.youtube.com/embed/nJy5NbTjbFo',
+    },
+    {
+      id: 5,
+      link: 'https://www.youtube.com/embed/6Bbw9ovb7SI',
+    },
+    {
+      id: 6,
+      link: 'https://www.youtube.com/embed/rXoS_d-KVEQ',
+    },
+    {
+      id: 7,
+      link: 'https://www.youtube.com/embed/mln57Xdonc8',
+    },
+    {
+      id: 8,
+      link: 'https://www.youtube.com/embed/4NlsWnI0AvM',
+    },
+  ]
   return (
     <>
       <Head>
@@ -22,27 +47,13 @@ const sets = () => {
       </Head>
       <h2 className='text-center mt-2'>Los mejores sets de la web</h2>
       <div className='row bg-secondary d-flex gx-0 justify-content-around'>
-        <div className='col-11 col-md-8 mt-2'>
-          <VideoWrapper url={sets.set5} height={500} />
-        </div>
-        <div className='col-11 col-md-5 mt-2'>
-          <VideoWrapper url={sets.set1} />
-        </div>
-        <div className='col-11 col-md-5 mt-2'>
-          <VideoWrapper url={sets.set2} />
-        </div>
-        <div className='col-11 col-md-5'>
-          <VideoWrapper url={sets.set3} />
-        </div>
-        <div className='col-11 col-md-5'>
-          <VideoWrapper url={sets.set4} />
-        </div>
-        <div className='col-11 col-md-5'>
-          <VideoWrapper url={sets.set6} />
-        </div>
-        <div className='col-11 col-md-5'>
-          <VideoWrapper url={sets.set7} />
-        </div>
+        {sets &&
+          sets.length > 0 &&
+          sets.map((set) => (
+            <div className='col-11 col-md-5 mt-2' key={set.id}>
+              <VideoWrapper url={set.link} />
+            </div>
+          ))}
       </div>
     </>
   )
